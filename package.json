@@ -1,0 +1,15 @@
+{
+  "name": "ai-observability-platform",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Cyril",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}

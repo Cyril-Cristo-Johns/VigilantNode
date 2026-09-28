@@ -1,0 +1,25 @@
+{
+  "name": "ai-powered-job-application-pipeline",
+  "version": "1.0.0",
+  "description": "A board specifically for tracking job hunts. You drag a company from \"Applied\" to \"Interviewing\".And more features to be added later on.",
+  "license": "ISC",
+  "author": "Cyril",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
