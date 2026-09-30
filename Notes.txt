@@ -1,0 +1,14 @@
+Q1)Why prefer perf_hooks over Date.now()
+
+• System Clock Drift & Adjustments: Date.now() reflects the system's wall-clock time. 
+If the server's operating system automatically syncs its clock via NTP (Network Time Protocol)
+ to correct a drift, or if a user manually changes the system time during a request, 
+ Date.now() can jump forward, jump backward, or freeze. This can result in inaccurate, zero, or 
+ even negative request durations.
+• Low Precision: Date.now() returns integers in milliseconds and its 
+ accuracy is bound by the underlying operating system's clock resolution 
+ (which can drift or step by 1 to 15ms). performance.now() provides floating-point values
+ accurate to the nanosecond/microsecond level, which is essential for capturing fast API responses
+ that execute in under a millisecond.
+
+ 

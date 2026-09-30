@@ -11,5 +11,8 @@
   },
   "devDependencies": {
     "concurrently": "^10.0.5"
+  },
+  "dependencies": {
+    "perf_hooks": "^0.0.1"
   }
 }
