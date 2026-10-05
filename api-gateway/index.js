@@ -4,16 +4,17 @@ import "dotenv/config"
 import cors from "cors"
 import intercept from "./Interceptor.js";
 import ReRouting from "./Route/Rerouting.routes.js";
+import analyseRouter from "./Route/analysis.routes.js";
 
 let app= express();
 app.use(express.json())
 app.use(cors({
     origin: true
 }))
-let link= process.env.LINK;
 
+app.use(analyseRouter);
 app.use(intercept)
-app.use(ReRouting)
+app.use("/rerouting", ReRouting)
 connect()
 .then(
     app.listen(4000, ()=>{
